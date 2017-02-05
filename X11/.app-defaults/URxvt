@@ -1,0 +1,28 @@
+URxvt.saveLines: 10000
+URxvt.foreground: #586e75
+URxvt.background: #fdf6e3
+URxvt.borderColor: #fdf6e3
+URxvt.scrollBar: False
+
+URxvt.font: xft:Source\ Code\ Pro:Regular:pixelsize=10
+
+URxvt.perl-lib: /usr/lib/urxvt/perl
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/local/google/home/nik/bin/run-chrome.sh
+URxvt.matcher.button: 1
+
+! Send the strings that .inputrc is expecting for C-left and C-right
+URxvt.keysym.C-Right: \033[1;5C
+URxvt.keysym.C-Left: \033[1;5D
+
+! Fix font width issues. See
+! https://bugs.launchpad.net/ubuntu/+source/rxvt-unicode/+bug/309792 for
+! details.
+URxvt.letterSpace: -2
+
+! Additional matchers.
+
+! "g4 change" output is "Change ... created ..."
+!URxvt.matcher.pattern.1: (?:Change\\s)(\\d+)(?:\\screated)
+!URxvt.matcher.launcher.1: /usr/local/google/home/nik/bin/run-chrome.sh http://cr/$1
+!URxvt.

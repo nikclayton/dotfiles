@@ -1,0 +1,12 @@
+[user]
+	name = Nik Clayton
+	email = nik@ngo.org.uk
+[gui]
+	fontui = -family \"Liberation Sans\" -size 9 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"Liberation Mono\" -size 9 -weight normal -slant roman -underline 0 -overstrike 0
+[cola]
+	fontdiff = Liberation Mono,9,-1,5,50,0,0,0,0,0
+[core]
+	autocrlf = false
+[push]
+	default = simple

@@ -1,0 +1,14 @@
+set editing-mode emacs
+set show-all-if-ambiguous On
+
+# "\e[A" and "\e[B" being whatever your terminal uses for up & down.
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e\e[C": forward-word
+"\e\e[D": backward-word
+
