@@ -311,6 +311,8 @@
   :defer t
   :bind ("C-=" . er/expand-region))
 
+;; Major mode for editing web-templates.
+;; http://web-mode.org/
 (use-package web-mode
   :ensure t)
 
