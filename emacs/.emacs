@@ -274,10 +274,9 @@
   :ensure t
   :diminish undo-tree-mode
   :config
-  (progn
-    (global-undo-tree-mode)
-    (setq undo-tree-visualizer-timestamps t)
-    (setq undo-tree-visualizer-diff t)))
+  (global-undo-tree-mode)
+  (setq undo-tree-visualizer-timestamps t)
+  (setq undo-tree-visualizer-diff t))
 
 ;; Show key guides on certain prefixes.
 ;; https://github.com/kai2nenobu/guide-key
