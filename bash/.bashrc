@@ -17,7 +17,7 @@ shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000000
-HISTFILESIZE=1000000
+HISTFILESIZE=1000000000
 HISTTIMEFORMAT="%F %T "
 
 # Save multi-line commands as one line in the history.
