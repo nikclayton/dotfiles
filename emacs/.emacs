@@ -238,6 +238,7 @@
 	    (lambda ()
 	      (setq tab-width 2)
 	      (setq gofmt-command "goimports")
+              (setq company-tooltip-align-annotations t)
 	      (go-eldoc-setup)
 	      (set (make-local-variable 'company-backends) '(company-go))
 	      (company-mode))))
