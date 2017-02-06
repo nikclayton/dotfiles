@@ -288,6 +288,12 @@
   (setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-c"))
   (guide-key-mode 1))  ; Enable guide-key-mode
 
+;; Provides a visual mechanism to select the window to switch to.
+;; https://github.com/dimitri/switch-window
+(use-package switch-window
+  :ensure t
+  :defer t
+  :bind (("C-x o" . switch-window)))
 
 ;; Expand the selected region by semantic units.
 ;; https://github.com/magnars/expand-region.el
