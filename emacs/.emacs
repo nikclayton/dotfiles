@@ -70,7 +70,9 @@
 (use-package fill-column-indicator
   :ensure t
   :config
-  (setq fci-rule-column 78))
+  (setq fci-rule-column 78)
+  (setq fci-rule-color
+        (cdr (assoc-string "zenburn-yellow-2" zenburn-colors-alist))))
 
 ;; fci-mode interacts badly with popup, see
 ;; https://github.com/alpaker/Fill-Column-Indicator/issues/21
