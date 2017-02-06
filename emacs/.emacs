@@ -242,7 +242,9 @@
 	      (company-mode))))
 
 (use-package go-eldoc
-  :ensure t)
+  :ensure t
+  :config
+  (add-hook 'go-mode-hook 'go-eldoc-setup))
 
 (use-package go-guru
   :ensure t)
