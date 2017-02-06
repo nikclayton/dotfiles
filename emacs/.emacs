@@ -257,6 +257,7 @@
 
 
 
+;; https://www.emacswiki.org/emacs/WinnerMode
 (use-package winner
   :ensure t
   :defer t)
@@ -265,6 +266,8 @@
   :ensure t
   :bind (("C-x g" . magit-status)))
 
+;; C-x u (undo-tree-visualize) to visualize the undo tree.
+;; https://www.emacswiki.org/emacs/UndoTree
 (use-package undo-tree
   :ensure t
   :diminish undo-tree-mode
@@ -274,6 +277,8 @@
     (setq undo-tree-visualizer-timestamps t)
     (setq undo-tree-visualizer-diff t)))
 
+;; Show key guides on certain prefixes.
+;; https://github.com/kai2nenobu/guide-key
 (use-package guide-key
   :ensure t
   :defer t
@@ -282,6 +287,9 @@
   (setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-c"))
   (guide-key-mode 1))  ; Enable guide-key-mode
 
+
+;; Expand the selected region by semantic units.
+;; https://github.com/magnars/expand-region.el
 (use-package expand-region
   :ensure t
   :defer t
