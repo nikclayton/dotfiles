@@ -44,6 +44,12 @@
   (spaceline-emacs-theme)
   (spaceline-toggle-buffer-encoding-abbrev-off))
 
+(use-package spaceline-config
+  :ensure spaceline
+  :config
+  (spaceline-spacemacs-theme)
+  (spaceline-toggle-buffer-encoding-abbrev-off))
+
 (use-package zenburn-theme
   :ensure t
   :config
