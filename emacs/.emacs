@@ -35,6 +35,9 @@
 
 (tool-bar-mode -1)			; Disable the toolbar
 (global-linum-mode 1)			; Line numbers everywhere
+(fset 'yes-or-no-p 'y-or-n-p)           ; Always allow y/n for yes/no
+(save-place-mode 1)                     ; Save point position in each file
+(global-auto-revert-mode)               ; Revert buffers when file changes
 
 (setq ring-bell-function 'ignore)	; No beeping, ever
 
