@@ -260,7 +260,9 @@
 ;; https://www.emacswiki.org/emacs/WinnerMode
 (use-package winner
   :ensure t
-  :defer t)
+  :defer t
+  :config
+  (winner-mode 1))
 
 (use-package magit
   :ensure t
