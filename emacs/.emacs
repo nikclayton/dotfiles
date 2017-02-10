@@ -334,3 +334,6 @@
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 (setq auto-save-file-name-transforms '((".*" "~/.emacs.d/autosave" t)))
+
+(when (file-exists-p "~/.emacs.google.el")
+  (load-file "~/.emacs.google.el"))
