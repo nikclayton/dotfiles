@@ -105,7 +105,12 @@
 (setq mouse-wheel-scroll-amount (quote (2 ((shift) . 1) ((control)))))
 
 (unless (display-graphic-p)
-  (xterm-mouse-mode))
+  (xterm-mouse-mode)
+  (define-key input-decode-map "\e[1;5C" [(control right)])
+  (define-key input-decode-map "\e[1;5D" [(control left)])
+  (define-key input-decode-map "\e[1;5E" [(control up)])
+  (define-key input-decode-map "\e[1;5F" [(meta left)]))
+
 
 (setq frame-title-format "%f")
 
