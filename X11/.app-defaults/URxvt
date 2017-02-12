@@ -12,7 +12,8 @@ URxvt*xftAntialias: true
 URxvt*background: #3f3f3f
 URxvt*foreground: #dcdccc
 URxvt*cursorColor: #aaaaaa
-URxvt*colorUL: #366060
+! Use zenburn-yellow for underlined text.
+URxvt*colorUL: #f0dfaf
 URxvt*underlineColor: #dfaf8f
 URxvt*color0: #3f3f3f
 URxvt*color1: #cc9393
