@@ -345,7 +345,13 @@
 ;; Major mode for editing web-templates.
 ;; http://web-mode.org/
 (use-package web-mode
-  :ensure t)
+  :ensure t
+  :bind (:map web-mode-map
+              ("C-c /" . web-mode-element-close))
+  :config
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
