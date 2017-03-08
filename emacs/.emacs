@@ -51,6 +51,13 @@
                 (internal-border-width . 5)
                 (border-width . 1)))
 
+;; Trim whitespace
+(use-package ws-trim
+  :ensure t
+  :config
+  (setq ws-trim-level 1)                ; Trim all modified lines.
+  (global-ws-trim-mode t))              ; Enable everywhere
+
 (use-package spaceline
   :ensure t
   :config
