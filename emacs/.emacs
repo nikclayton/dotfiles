@@ -42,6 +42,8 @@
 (global-auto-revert-mode)               ; Revert buffers when file changes
 (delete-selection-mode 1)               ; Type to delete highlighted text
 
+(set-variable 'whitespace-global-modes '(not go-mode))
+(global-whitespace-mode)
 
 (setq ring-bell-function 'ignore)	; No beeping, ever
 
