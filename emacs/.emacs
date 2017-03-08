@@ -135,7 +135,6 @@
   (define-key input-decode-map "\e[1;5E" [(control up)])
   (define-key input-decode-map "\e[1;5F" [(meta left)]))
 
-
 (setq frame-title-format "%f")
 
 
@@ -153,6 +152,9 @@
   :ensure t
   :init
   (global-flycheck-mode))
+
+(use-package flycheck-pos-tip
+  :ensure t)
 
 (use-package eldoc
   :ensure t
