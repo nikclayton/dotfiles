@@ -117,6 +117,11 @@
   :config
   (setq uniquify-buffer-name-style 'post-forward))
 
+(use-package ido-ubiquitous
+  :ensure t
+  :config
+  (ido-ubiquitous-mode 1))
+
 ;; Smoother window scrolling,
 ;; https://www.emacswiki.org/emacs/SmoothScrolling.
 (setq auto-window-vscroll nil)
