@@ -43,6 +43,14 @@
 
 (setq ring-bell-function 'ignore)	; No beeping, ever
 
+;; Disable GTK for tooltips, so that the Emacs configured colours and
+;; sizes are used.
+(set-variable 'x-gtk-use-system-tooltips nil)
+(set-variable 'tooltip-frame-parameters
+              '((name . "tooltip")
+                (internal-border-width . 5)
+                (border-width . 1)))
+
 (use-package spaceline
   :ensure t
   :config
