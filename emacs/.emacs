@@ -117,7 +117,7 @@
   :config
   (setq uniquify-buffer-name-style 'post-forward))
 
-(use-package ido-ubiquitous
+(use-package ido-completing-read+
   :ensure t
   :config
   (ido-ubiquitous-mode 1))
