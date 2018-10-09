@@ -57,11 +57,10 @@
                 (border-width . 1)))
 
 ;; Trim whitespace
-(use-package ws-trim
+(use-package ws-butler
   :ensure t
   :config
-  (setq ws-trim-level 1)                ; Trim all modified lines.
-  (global-ws-trim-mode t))              ; Enable everywhere
+  (ws-butler-global-mode))		; Enable everywhere
 
 (use-package spaceline
   :ensure t
